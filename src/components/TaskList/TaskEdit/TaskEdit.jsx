@@ -1,11 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Collection, FILES_LIMIT, TaskStatus } from '../../../const';
+import { Collection, FILES_LIMIT, TaskStatus, TaskTextLimit } from '../../../const';
 import useTask from '../../../hooks/useTask';
-
-const TaskTextLimit = {
-  Title: 12,
-  Description: 120
-};
 
 function TaskEdit({ task }) {
   const filePicker = useRef(null);
@@ -44,7 +39,7 @@ function TaskEdit({ task }) {
     <>
       <div className="overlay" />
       <article className="main__task task task--edit">
-        <form className="task__form task-form" onSubmit={handleSubmit}>
+        <form className="task-form" onSubmit={handleSubmit}>
           <div className="task-form__content">
             <label className="task-form__label" htmlFor="title">
               <input
@@ -91,7 +86,7 @@ function TaskEdit({ task }) {
                 className="hidden"
                 name={Field.Files}
                 type="file"
-                accept=".docx, .pdf"
+                accept=".docx,.pdf,text/plain"
                 multiple
                 ref={filePicker}
                 onChange={handleFormFieldChange}
@@ -103,7 +98,7 @@ function TaskEdit({ task }) {
               <span className="task-form__limit">Максимум: {FILES_LIMIT}</span>
             </label>
           </div>
-          <div className="task-form__controls form-controls">
+          <div className="form-controls">
             <button
               className="form-controls__item form-controls__item--submit"
               type="submit"

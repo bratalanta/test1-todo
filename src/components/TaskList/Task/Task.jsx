@@ -39,7 +39,7 @@ function Task({ task }) {
           <p className="task-content__description task-description">{description}</p>
           <TaskLinks files={files} />
         </div>
-        <footer className="task__footer task-footer">
+        <footer className="task-footer">
           <span
             className={`task-footer__deadline ${
               isTaskExpired && !isDone ? 'task-footer__deadline--expired' : null

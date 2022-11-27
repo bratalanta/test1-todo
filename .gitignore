@@ -1,10 +1,16 @@
-
 .cache/
 coverage/
 dist/*
 !dist/index.html
 node_modules/
 *.log
+.firebase
+.github
+
+# editors
+.idea
+*.sublime*
+.vscode
 
 # OS generated files
 .DS_Store

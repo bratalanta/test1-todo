@@ -22,7 +22,6 @@ const deleteTask = async (id) => {
 };
 
 const updateTask = async (id, data) => {
-  console.log(id);
   const query = await firestore.collection(Collection.Name).where('id', '==', id);
   const querySnapshot = await query.get();
   await querySnapshot.forEach((doc) => doc.ref.update(data));

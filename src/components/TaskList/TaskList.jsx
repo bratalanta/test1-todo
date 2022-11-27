@@ -21,7 +21,7 @@ function TaskList() {
   }
 
   return (
-    <main className="page__main main _container">
+    <main className="main _container">
       <div className="main__board board">
         {isAdding && <TaskEdit />}
         {tasks.length
