@@ -18,7 +18,6 @@ function Task({ task }) {
       isDone: true
     });
   };
-
   return (
     <article className={taskCn}>
       <div className="task__body">

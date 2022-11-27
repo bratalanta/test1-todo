@@ -1,6 +1,6 @@
-# test-todo-parcel
+# TODO
 
-Empty project.
+Стек: HTML5/Less/ReactJS/firebase
 
 ## Building and running on localhost
 
@@ -19,14 +19,6 @@ npm start
 To create a production build:
 
 ```sh
-npm run build-prod
+npm run build
 ```
-
-## Running
-
-Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
 
