@@ -9,12 +9,15 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "dayjs": "^1.11.6",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-jsdoc": "^39.6.4",
     "firebase": "^9.14.0",
+    "jsdoc": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1"

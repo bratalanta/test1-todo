@@ -3,7 +3,14 @@ import TaskLinks from './TaskLinks/TaskLinks';
 import { formatDate, isExpired } from '../../../utils/utils';
 import { updateTask } from '../../../api/firebase';
 import { useApp } from '../../../contexts/AppProvider/AppProvider';
+import TaskType from '../../../types/task';
 
+/**
+ * Компонент задачи (для просмотра, редактирования или выделения его выполненным)
+ *
+ * @param {TaskType} task - данные задачи
+ * @returns {React.ReactNode} - вернет компонент
+ */
 function Task({ task }) {
   const { description, title, files, deadline, id, isDone } = task;
   const { setTaskEditId } = useApp();
@@ -18,6 +25,7 @@ function Task({ task }) {
       isDone: true
     });
   };
+
   return (
     <article className={taskCn}>
       <div className="task__body">

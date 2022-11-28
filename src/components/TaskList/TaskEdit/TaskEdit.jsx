@@ -1,7 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { Collection, FILES_LIMIT, TaskStatus, TaskTextLimit } from '../../../const';
 import useTask from '../../../hooks/useTask';
+import TaskType from '../../../types/task';
 
+/**
+ * Компонент редактирования задачи
+ *
+ * @param {TaskType} [task] - Задача (опционально)
+ * @returns {React.ReactNode} - вернет компонент
+ */
 function TaskEdit({ task }) {
   const filePicker = useRef(null);
   const { Field } = Collection;

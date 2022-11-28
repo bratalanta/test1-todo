@@ -1,6 +1,11 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppProvider/AppProvider';
 
+/**
+ * Хэдер всей страницы
+ *
+ * @returns {React.ReactNode} - вернет компонент
+ */
 function Header() {
   const { setIsAdding } = useApp();
 

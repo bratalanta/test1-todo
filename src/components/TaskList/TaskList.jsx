@@ -8,6 +8,11 @@ import { useApp } from '../../contexts/AppProvider/AppProvider';
 import { firestore } from '../../api/firebase';
 import Loader from '../Loader/Loader';
 
+/**
+ * Список задач
+ *
+ * @returns {React.ReactNode} - вернет компонент
+ */
 function TaskList() {
   const { isAdding, taskEditId } = useApp();
   const { Field } = Collection;
