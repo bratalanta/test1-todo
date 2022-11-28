@@ -1,5 +1,6 @@
 # TODO
 
+Проект выложен на Vercel: https://test1-todo.vercel.app/  
 Стек: HTML5/Less/ReactJS/firebase
 
 ## Building and running on localhost
